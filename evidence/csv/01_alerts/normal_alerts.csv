@@ -1,0 +1,19 @@
+type,severity,src_ip,dst_ip,port,summary,evidence
+printer_advertisement,medium,192.168.68.200,172.17.0.2,631,Printer metadata seen from 192.168.68.200 with discovery fields.,"IPP/1.1 200 OK
+Content-Type: application/ipp
+Printer-Name: OfficePrinter
+Printer-URI: ipp://192.168.68.200:631/printers/OfficePrinter
+Printer-Location: Attacker Lab
+Printer-Info: OfficePrinter
+A"
+suspicious_ipp_connection,medium,192.168.68.200,172.17.0.2,631,IPP/CUPS request observed between 192.168.68.200 and 172.17.0.2.,"IPP/1.1 200 OK
+Content-Type: application/ipp
+Printer-Name: OfficePrinter
+Printer-URI: ipp://192.168.68.200:631/printers/OfficePrinter
+Printer-Location: Attacker Lab
+Printer-Info: OfficePrinter
+A"
+repeated_discovery_activity,high,192.168.68.200,multiple,631,192.168.68.200 generated 3 CUPS discovery messages in a short sequence.,"IPP/1.1 200 OK
+Content-Type: application/ipp
+Printer-Name: OfficePrinter
+Prin"

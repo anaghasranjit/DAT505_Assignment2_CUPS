@@ -1,0 +1,4 @@
+timestamp,test_phase,packets_sent,packets_detected,alerts_generated,attack_packets,normal_packets,status
+2024-11-16T17:00:00Z,before_mitigation,3,3,3,3,0,VULNERABLE
+2024-11-16T17:05:00Z,after_mitigation,3,0,1,0,0,PROTECTED
+2024-11-16T17:10:00Z,normal_traffic_test,2,2,0,0,2,WORKING

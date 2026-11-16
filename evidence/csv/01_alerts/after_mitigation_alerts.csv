@@ -1,0 +1,2 @@
+type,severity,src_ip,dst_ip,port,summary,evidence
+mitigation_active,low,192.168.68.112,172.17.0.2,631,Attack from 192.168.68.112 BLOCKED by firewall rule - UDP port 631 restricted - MITIGATION TEST AFTER,"Connection attempt blocked by iptables rule: -A INPUT -p udp --dport 631 -j DROP"

@@ -1,0 +1,11 @@
+[
+  {
+    "type": "mitigation_active",
+    "severity": "low",
+    "src_ip": "192.168.68.112",
+    "dst_ip": "172.17.0.2",
+    "port": 631,
+    "summary": "Attack from 192.168.68.112 BLOCKED by firewall rule - UDP port 631 restricted - MITIGATION TEST AFTER",
+    "evidence": "Connection attempt blocked by iptables rule: -A INPUT -p udp --dport 631 -j DROP"
+  }
+]

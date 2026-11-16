@@ -1,0 +1,13 @@
+type,severity,src_ip,dst_ip,port,summary,evidence
+printer_advertisement,medium,192.168.68.112,172.17.0.2,631,Printer metadata seen from 192.168.68.112 with discovery fields.,"CUPS-Get-Printers
+Content-Type: application/ipp
+Printer-Name: EvilPrinter
+Printer-URI: ipp://192.168.56.10:631/printers/EvilPrinter
+
+"
+suspicious_ipp_connection,medium,192.168.68.112,172.17.0.2,631,IPP/CUPS request observed between 192.168.68.112 and 172.17.0.2.,"CUPS-Get-Printers
+Content-Type: application/ipp
+Printer-Name: EvilPrinter
+Printer-URI: ipp://192.168.56.10:631/printers/EvilPrinter
+
+"

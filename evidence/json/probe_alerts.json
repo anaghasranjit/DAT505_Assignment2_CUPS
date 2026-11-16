@@ -1,0 +1,20 @@
+[
+  {
+    "type": "printer_advertisement",
+    "severity": "medium",
+    "src_ip": "192.168.68.112",
+    "dst_ip": "172.17.0.2",
+    "port": 631,
+    "summary": "Printer metadata seen from 192.168.68.112 with discovery fields.",
+    "evidence": "CUPS-Get-Printers\r\nContent-Type: application/ipp\r\nPrinter-Name: EvilPrinter\r\nPrinter-URI: ipp://192.168.56.10:631/printers/EvilPrinter\r\n\r\n"
+  },
+  {
+    "type": "suspicious_ipp_connection",
+    "severity": "medium",
+    "src_ip": "192.168.68.112",
+    "dst_ip": "172.17.0.2",
+    "port": 631,
+    "summary": "IPP/CUPS request observed between 192.168.68.112 and 172.17.0.2.",
+    "evidence": "CUPS-Get-Printers\r\nContent-Type: application/ipp\r\nPrinter-Name: EvilPrinter\r\nPrinter-URI: ipp://192.168.56.10:631/printers/EvilPrinter\r\n\r\n"
+  }
+]

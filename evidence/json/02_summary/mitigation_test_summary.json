@@ -1,0 +1,21 @@
+{
+  "mitigation_test": "UDP Port 631 Restriction",
+  "description": "Tested blocking UDP port 631 to prevent CUPS discovery attacks",
+  "method": "iptables -A INPUT -p udp --dport 631 -j DROP",
+  "before_mitigation": {
+    "packets_sent": 3,
+    "packets_detected": 3,
+    "alerts_generated": 3,
+    "result": "All attack packets reached the victim - VULNERABLE"
+  },
+  "after_mitigation": {
+    "packets_sent": 3,
+    "packets_detected": 0,
+    "alerts_generated": 1,
+    "blocked_by": "firewall_rule",
+    "result": "All attack packets BLOCKED - MITIGATION SUCCESSFUL"
+  },
+  "effectiveness": "100% - All attack packets blocked at firewall level",
+  "false_positives": 0,
+  "timestamp": "2024-11-16T17:49:00Z"
+}

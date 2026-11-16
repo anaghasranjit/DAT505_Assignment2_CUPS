@@ -1,0 +1,29 @@
+[
+  {
+    "type": "printer_advertisement",
+    "severity": "medium",
+    "src_ip": "192.168.68.112",
+    "dst_ip": "172.17.0.2",
+    "port": 631,
+    "summary": "Printer metadata seen from 192.168.68.112 with discovery fields.",
+    "evidence": "IPP/1.1 200 OK\r\nContent-Type: application/ipp\r\nPrinter-Name: EvilPrinter\r\nPrinter-URI: ipp://192.168.68.112:631/printers/EvilPrinter\r\nPrinter-Location: Attacker Lab\r\nPrinter-Info: EvilPrinter\r\nAttribu"
+  },
+  {
+    "type": "suspicious_ipp_connection",
+    "severity": "medium",
+    "src_ip": "192.168.68.112",
+    "dst_ip": "172.17.0.2",
+    "port": 631,
+    "summary": "IPP/CUPS request observed between 192.168.68.112 and 172.17.0.2.",
+    "evidence": "IPP/1.1 200 OK\r\nContent-Type: application/ipp\r\nPrinter-Name: EvilPrinter\r\nPrinter-URI: ipp://192.168.68.112:631/printers/EvilPrinter\r\nPrinter-Location: Attacker Lab\r\nPrinter-Info: EvilPrinter\r\nAttribu"
+  },
+  {
+    "type": "repeated_discovery_activity",
+    "severity": "high",
+    "src_ip": "192.168.68.112",
+    "dst_ip": "multiple",
+    "port": 631,
+    "summary": "192.168.68.112 generated 3 CUPS discovery messages in a short sequence.",
+    "evidence": "IPP/1.1 200 OK\r\nContent-Type: application/ipp\r\nPrinter-Name: EvilPrinter\r\nPrinte"
+  }
+]

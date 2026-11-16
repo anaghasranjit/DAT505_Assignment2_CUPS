@@ -1,0 +1,22 @@
+{
+  "attack_variants": [
+    {
+      "name": "Unauthorized discovery",
+      "type": "advertise",
+      "description": "Forged printer advertisement with attacker-controlled metadata",
+      "expected_result": "Detected as unauthorized printer advertisement"
+    },
+    {
+      "name": "Malformed protocol fields",
+      "type": "malformed",
+      "description": "Discovery packets with injected control bytes",
+      "expected_result": "Detected as malformed protocol field"
+    },
+    {
+      "name": "Probe requests",
+      "type": "probe",
+      "description": "CUPS discovery probe requests",
+      "expected_result": "Detected as suspicious IPP connection"
+    }
+  ]
+}
